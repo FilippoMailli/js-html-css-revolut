@@ -31,5 +31,21 @@ header {
     height: 100%;
     width: 60%;
     float: right;
-    background-color: blue;
+    background-color: grey;
+    text-transform: capitalize;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+nav.menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
 }
