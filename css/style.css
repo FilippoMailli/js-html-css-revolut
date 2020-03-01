@@ -17,35 +17,85 @@ header {
 .container {
     height: 100%;
     max-width: 1200px;
-    background-color: green;
 }
 
 .header-left {
     height: 100%;
     width: 20%;
     float: left;
-    background-color: red;
+    background-image: url('https://www.boolean.careers/images/common/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-left:hover {
+    cursor: pointer;
 }
 
 .header-right {
     height: 100%;
     width: 60%;
     float: right;
-    background-color: grey;
     text-transform: capitalize;
 }
 
 .dropdown-menu {
+    position: absolute;
     display: none;
+    padding: 0 0 10px 0;
+    line-height: 50px;
 }
 
 nav.menu {
-    height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .menu-item {
-    display: flex;
+    line-height: 80px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.menu-item a.freccia-down::after {
+    content: '\f107';
+    font-family: "FontAwesome";
+    font-weight: 900;
+    float: right;
+    margin-left: 5px;
+}
+
+.dropdown-menu-item a {
+    font-size: 14px;
+}
+
+.dropdown-menu-item a:active {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a {
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
+    border-bottom: 2px solid #61ce4e;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+
 }
